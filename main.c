@@ -1,8 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdint.h>
-#include <string.h>
-
+ 
 #include "cli.h"
 #include "colors.h"
 #include "parse.h"
@@ -13,9 +12,7 @@
 // user selected mode, origins from cli.c
 extern uint8_t selected_mode;
 
-
 int main(int argc, char *argv[]) {
-
 
 	cli_display_info();
 
@@ -35,7 +32,7 @@ int main(int argc, char *argv[]) {
 	// lets create it!
 	colors_update_hsl();
 
-	// execute_mode();
+	// display data
 	cli_display_all_data();
 
 	// execute selected mode
